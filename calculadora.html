@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <input id="valor1" type="number" placeholder="primeiro numero">
+        <input id="valor2" type="number" placeholder="segundo numero">
+
+
+        <label>Operação:</label>
+        <select name="cbxOperacao" id="cbxOperacao">
+            <option value="+">Adição</option>
+            <option value="-">Subtração</option>
+            <option value="/">Divisão</option>
+            <option value="*">Multiplicação</option>
+        </select>
+
+        <button onclick=calculadora()>resultado</button>
+        <p id="valorFinal">=</p>
+    </div>
+
+
+</body>
+
+<script>
+    function calculadora() {
+        let numero1 = parseFloat(document.getElementById("valor1").value);
+
+        let numero2 = parseFloat(document.getElementById("valor2").value);
+
+        let Operação = document.getElementById("cbxOperacao").value;
+        let resultado
+
+        if (Operação === "+") {
+            resultado = numero1 + numero2;
+        } else if (Operação === "-") {
+            resultado = numero1 - numero2;
+        } else if (Operação === "/") {
+            resultado = numero1 / numero2;
+        } else if (Operação === "*") {
+            resultado = numero1 * numero2;
+        }
+
+
+        valorFinal.innerHTML = '=' + resultado
+
+    }
+
+</script>
+
+</html>

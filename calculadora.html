@@ -4,7 +4,10 @@
 <head>
 
     <title>Document</title>
+    
 </head>
+
+<h1> <u>CALCULADORA</u> </h1>
 
 <body>
 
@@ -28,6 +31,63 @@
 
 </body>
 
+<style>
+ h1{
+
+    color: white;
+    
+
+ }
+
+
+
+
+  
+  body {
+        background-color: #f3496c;
+        text-align: center;
+    }
+    
+    div{
+    
+width: 40%;
+min-width: 450px;
+height: 300px;
+background-color: white;
+border-radius: 10px;
+box-shadow: 0 25px 30px rgba(0, 0, 0, 0.3);
+margin: 300px auto;
+}
+
+input, select{
+    min-width: 320px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid #c1c1c1;
+    margin-top: 20px;
+    height: 40px;
+    padding-left: 10px;
+
+}
+
+button{
+
+    display: block;
+    margin: 20px auto;
+    height: 40px;
+    min-width: 320px;
+    border: none;
+    border-radius: 5px;
+    background: #3c1053;
+    color: white;
+    cursor: pointer;
+}
+
+</style>
+
+
+
 <script>
     function calculadora() {
         let numero1 = parseFloat(document.getElementById("valor1").value);
@@ -48,7 +108,7 @@
         }
 
 
-        valorFinal.innerHTML = '=' + resultado
+        valorFinal.innerHTML = '= ' + resultado
 
     }
 
